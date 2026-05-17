@@ -1,4 +1,4 @@
-# IUAS
+# 室内人体活动安全感知仿真实验
 
 《Generative AI Based Secure Wireless Sensing for ISAC Networks》的仿真代码。项目基于图 Transformer + 离散扩散模型，在固定 ISAC 设备分布、动态用户位置条件下，自动生成高 SSNR、低资源占用的通信拓扑图，为室内用户安全感知提供最优通信链路部署方案。
 
@@ -16,6 +16,7 @@
 - `dcdm/datasets.py`: 数据加载.
 - `dcdm/metrics.py`: 奖励统计数据.
 - `dcdm/checkpointing.py`: 检查点保存/加载.
+- `graph`: 存放数据.
 
 ## 运行
 
