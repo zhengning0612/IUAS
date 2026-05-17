@@ -1,8 +1,8 @@
-# D-CDM ISAC Graph Diffusion
+# IUAS
 
 《Generative AI Based Secure Wireless Sensing for ISAC Networks》的仿真代码。项目基于图 Transformer + 离散扩散模型，在固定 ISAC 设备分布、动态用户位置条件下，自动生成高 SSNR、低资源占用的通信拓扑图，为室内用户安全感知提供最优通信链路部署方案。
-The project is based on a graph Transformer combined with a discrete diffusion model. Under the conditions of fixed ISAC device distribution and dynamic user locations, it automatically generates a communication topology graph with high SSNR and low resource consumption, providing the optimal communication link deployment solution for indoor user security perception.
-## Structure
+
+## 文件结构
 
 - `main.py`: 主函数入口.
 - `dcdm/config.py`: 参数配置.
@@ -17,7 +17,7 @@ The project is based on a graph Transformer combined with a discrete diffusion m
 - `dcdm/metrics.py`: 奖励统计数据.
 - `dcdm/checkpointing.py`: 检查点保存/加载.
 
-## Run
+## 运行
 
 Put `G0_dataset.pt` and `G0_dataset_test.pt` under `graph/`, then run:
 
@@ -31,17 +31,13 @@ For a quicker smoke run:
 python main.py --epochs 1 --eval-batches 1 --comparison-samples 1 --no-show
 ```
 
-Useful project-style options:
+## 项目声明
 
-```bash
-python main.py --seed 42 --save-every 10 --keep-checkpoints 3
-python main.py --resume-latest
-python main.py --output-dir runs/experiment_001 --no-show
+本项目的作者及单位：
+The author and affiliation of this project:
+
+```text
+项目名称 (Project Name): IUAS
+项目作者 (Author): Ning Zheng, Zhen Chen
+作者单位 (Affiliation): 暨南大学网络空间安全学院 (College of Cyber Security, Jinan University)
 ```
-
-Training now writes:
-
-- `dcdm_denoising_net.pth`: final model weights.
-- `logs/training_history.csv`: per-epoch loss and reward metrics.
-- `checkpoints/checkpoint_epoch_XXXX.pt`: resumable training checkpoints.
-- `checkpoints/best.pt`: best checkpoint by valid average reward.
