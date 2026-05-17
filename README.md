@@ -34,7 +34,6 @@ python main.py --epochs 1 --eval-batches 1 --comparison-samples 1 --no-show
 ## 项目声明
 
 本项目的作者及单位：
-The author and affiliation of this project:
 
 ```text
 项目名称 (Project Name): IUAS
