@@ -1,7 +1,7 @@
 # D-CDM ISAC Graph Diffusion
 
-This directory is organized as a small Python project instead of a single script.
-
+项目基于图 Transformer + 离散扩散模型，在固定 ISAC 设备分布、动态用户位置条件下，自动生成高 SSNR、低资源占用的通信拓扑图，为室内用户安全感知提供最优通信链路部署方案。
+The project is based on a graph Transformer combined with a discrete diffusion model. Under the conditions of fixed ISAC device distribution and dynamic user locations, it automatically generates a communication topology graph with high SSNR and low resource consumption, providing the optimal communication link deployment solution for indoor user security perception.
 ## Structure
 
 - `main.py`: command-line entry point for training, evaluation, and plotting.
