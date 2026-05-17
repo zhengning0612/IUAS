@@ -1,0 +1,6 @@
+torch
+# Install a torch-geometric build that matches your local torch/CUDA version.
+torch-geometric
+numpy
+matplotlib
+tqdm
